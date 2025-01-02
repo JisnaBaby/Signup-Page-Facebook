@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up for Facebook</title>
+    <link rel="icon" href="images/icon1.png" type="icon">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body bgcolor="#f0f2f5">
+    <div style="text-align: center; height: 100px;">
+        <img src="images/logo1.svg" alt="" style="width: 302px; height: 100px;">
+    </div>
+
+    <div class="container">
+        <div style="font-family: Arial, Helvetica, sans-serif;">
+            <h2 style="font-size: 25px;padding-top: 15px;">Create a new account</h2>
+            <h4 style="font-weight: 400; margin-top: -15px; color: #606770;">It's quick and easy.</h4>
+        </div>
+        <hr class="line1">
+
+        <form action="">
+            <div>
+                <input type="text" placeholder="First name" class="inp">
+                <input type="text" placeholder="Surname" class="inp" style="margin-left: 5px;">
+                <input type="text" placeholder="Mobile number or Email address" class="inp inp1">
+                <input type="text" placeholder="Password" class="inp inp1">
+                <input type="text" placeholder="Confirm password" class="inp inp1">
+            </div>
+
+            <div style="color: #606770;text-align: left; margin-left: 20px;">
+                <p>Date of birth
+                    <img src="images/question-mark.svg" alt="" style="width: 11px; cursor: pointer; ">
+                </p>
+            </div>
+
+            <div style="text-align: left; margin-left: 15px;">
+                <select name="day" id="day" class="select1">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                    <option value="">10</option>
+                    <option value="">11</option>
+                </select>
+                <select name="month" id="month" class="select1">
+                    <option value="">Jan</option>
+                    <option value="">Feb</option>
+                    <option value="">Mar</option>
+                    <option value="">Apr</option>
+                    <option value="">May</option>
+                    <option value="">Jun</option>
+                    <option value="">Jul</option>
+                    <option value="">Aug</option>
+                    <option value="">Sep</option>
+                    <option value="">Oct</option>
+                    <option value="">Nov</option>
+                    <option value="">Dec</option>
+                </select>
+                <select name="year" id="year" class="select1">
+                    <option value="">2000</option>
+                    <option value="">2001</option>
+                    <option value="">2002</option>
+                    <option value="">2003</option>
+                    <option value="">2005</option>
+                    <option value="">2006</option>
+                    <option value="">2007</option>
+                    <option value="">2008</option>
+                    <option value="">2009</option>
+                    <option value="">2010</option>
+                    <option value="">2011</option>
+                    <option value="">2012</option>
+                    <option value="">2013</option>
+                    <option value="">2014</option>
+                    <option value="">2015</option>
+                    <option value="">2016</option>
+                    <option value="">2017</option>
+                    <option value="">2018</option>
+                    <option value="">2019</option>
+                    <option value="">2020</option>
+                    <option value="">2021</option>
+                    <option value="">2022</option>
+                    <option value="">2023</option>
+                    <option value="">2024</option>
+                    <option value="">2025</option>
+                    <option value="">2026</option>
+                    <option value="">2027</option>
+                    <option value="">2028</option>
+                    <option value="">2029</option>
+                    <option value="">2030</option>
+                </select>
+            </div>
+
+            <div style="color: #606770;text-align: left; margin-left: 20px;">
+                <p>Gender <img src="images/question-mark.svg" alt="" style="width: 11px; cursor: pointer;"></p>
+            </div>
+
+            <div style="text-align: left; margin-left: 15px; display: flex;">
+                <div class="span1 select1" style="padding-top: 8px;">
+                    <label for="" style="margin-right: 35px; padding-left: 5px;">Female</label>
+                    <input type="radio" name="sex" id="female">
+                </div>
+                <div class="span1 select1" style="padding-top: 8px;">
+                    <label for="" style="margin-right: 50px; padding-left: 5px;">Male</label>
+                    <input type="radio" name="sex" id="male">
+                </div>
+                <div class="span1 select1" style="padding-top: 8px;">
+                    <label for="" style="margin-right: 35px; padding-left: 5px;">Custom</label>
+                    <input type="radio" name="sex" id="custom">
+                </div>
+            </div>
+
+            <div style="text-align: left; margin-left: 15px;" class="">
+                <select class="select1 select2" >
+                    <option>Select your pronoun</option>
+                    <option>She: "Wish her a happy birthday!"</option>
+                    <option>He: "Wish him a happy birthday!"</option>
+                    <option>They: "Wish them a happy birthday!"</option>
+                </select>
+                <div class="newtext">Your pronoun is visible to everyone.</div>
+            </div>
+
+            <div class="para">
+                <p>People who use our service may have uploaded your contact information to
+                    Facebook. <a href="">Learn more.</a></p>
+               <p>By clicking Sign Up, you agree to our <a href="">Terms</a>, <a href="">Privacy Policy</a> and 
+                <a href="">Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.</p>
+            </div>
+
+            <div>
+                <button class="btn">Sign Up</button>
+            </div>
+            
+            <div class="anchor">
+                <a href="" style="text-decoration: none; color: #1877f2;">Already have an account?</a>
+            </div>
+        </form>
+    </div>
+    
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#custom").click(function(){
+                $(".select2").show()
+                $(".newtext").show()
+                $(".container").height(+720)
+                
+            })
+
+            $("#male, #female").click(function(){
+                $(".select2").hide()
+                $(".newtext").hide()
+                $(".container").height(+680)
+                
+            })
+
+           
+        })
+    </script>
+</body>
+</html>
